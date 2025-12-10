@@ -42,7 +42,38 @@
 </head>
 <body class="min-h-screen">
     <!-- Navigation -->
-    <custom-navbar></custom-navbar>
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-white">Hadisizz</h1>
+
+    <ul class="hidden md:flex space-x-8 text-white font-medium">
+      <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+      <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+      <li><a href="#about" class="hover:text-gray-300">About</a></li>
+      <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Icon -->
+    <button onclick="toggleMenu()" class="md:hidden text-white text-3xl">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="md:hidden hidden bg-black px-6 pb-4">
+    <a href="#home" class="block py-2 text-white">Home</a>
+    <a href="#services" class="block py-2 text-white">Services</a>
+    <a href="#about" class="block py-2 text-white">About</a>
+    <a href="#contact" class="block py-2 text-white">Contact</a>
+  </div>
+</nav>
+
+<script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("hidden");
+}
+</script>
+
 
 <!-- Hero Section -->
 <section class="relative h-[90vh] max-h-[900px] min-h-[500px] w-full overflow-hidden">
