@@ -74,41 +74,41 @@ function toggleMenu() {
 }
 </script>
 
-
 <!-- Hero Section -->
-<section class="relative pt-32 pb-20 w-full overflow-hidden">
+<section class="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/40 z-10"></div>
 
-    <div class="absolute inset-0 bg-black/
-
-    <img src="http://static.photos/black/1200x630/42" 
-         alt="Luxury barbershop interior"
+    <!-- Background Image -->
+    <img src="https://images.unsplash.com/photo-1512609014385-dff0f7f6b6d1?auto=format&fit=crop&w=1920&q=80"
+         alt="Luxury Barbershop"
          class="absolute inset-0 w-full h-full object-cover object-center">
 
-    <div class="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-20">
-        <div class="max-w-2xl space-y-6">
+    <!-- Content -->
+    <div class="relative z-20 container mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight drop-shadow-lg">
+            The Razor's Edge
+        </h1>
 
-            <h1 class="text-5xl md:text-7xl font-bold leading-tight">
-                The Razor's Edge
-            </h1>
+        <p class="mt-4 text-xl md:text-2xl text-copper drop-shadow-lg">
+            Precision cuts, timeless shaves, and elevated grooming rituals.
+        </p>
 
-            <p class="text-xl md:text-2xl text-copper">
-                Precision cuts, timeless shaves, and elevated grooming rituals.
-            </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+            <a href="#book"
+               class="px-8 py-3 bg-copper text-charcoal rounded-md font-medium hover:bg-copper/90 transition">
+                Book Now
+            </a>
 
-            <div class="flex flex-wrap justify-center text-center gap-4 pt-4">
-                <a href="#book" 
-                   class="px-8 py-3 bg-copper text-charcoal rounded-md hover:bg-copper/90 transition duration-300">
-                   Book Now
-                </a>
-
-                <a href="#services" 
-                   class="px-8 py-3 border-2 border-copper text-copper rounded-md hover:bg-copper/10 transition duration-300">
-                   View Services
-                </a>
-            </div>
+            <a href="#services"
+               class="px-8 py-3 border-2 border-copper text-copper rounded-md font-medium hover:bg-copper/10 transition">
+                View Services
+            </a>
         </div>
     </div>
 </section>
+
 
 
     <!-- About Section -->
